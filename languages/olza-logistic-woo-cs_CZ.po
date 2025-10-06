@@ -1,0 +1,280 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Olza Logistic WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-25 16:06+0000\n"
+"PO-Revision-Date: 2024-02-28 13:57+0000\n"
+"Last-Translator: \n"
+"Language-Team: Czech\n"
+"Language: cs_CZ\n"
+"Plural-Forms: nplurals=3; plural=( n == 1 ) ? 0 : ( n >= 2 && n <= 4 ) ? 1 : "
+"2;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: olza-logistic-woo"
+
+#: olza-logistic-woo.php:91
+msgid ""
+"<p> The <strong>Olza Logistic WooCommerce </strong> plugin requires <strong>"
+"WooCommerce</strong> plugin installed & activated. </p>"
+msgstr ""
+"<p> Plugin <strong>Olza Logistic WooCommerce</strong> vyžaduje nainstalovaný "
+"a aktivovaný plugin <strong>WooCommerce</strong>. </p>"
+
+#: inc/olza-logistic-admin-functions.php:261
+msgid "Add"
+msgstr "Přidat"
+
+#: inc/olza-logistic-options.php:73
+msgid "Add fee according to the basket amount low to high."
+msgstr "Přidat poplatek dle do košíku množství nízké na vysokou."
+
+#: inc/olza-logistic-options.php:57
+msgid "Add your Mapbox API key."
+msgstr "Přidejte svůj Mapbox API klíč."
+
+#: inc/olza-logistic-options.php:49
+msgid "Add your olza logistic API access token."
+msgstr "Přidejte svůj olši logistické API přístupový token."
+
+#: inc/olza-logistic-options.php:41
+msgid "Add your olza logistic API URL."
+msgstr "Přidejte svůj olši logistické API URL."
+
+#: inc/olza-logistic-functions.php:460
+msgid "ALL"
+msgstr "VŠECHNO"
+
+#: inc/olza-logistic-admin-functions.php:269
+msgid "Amount"
+msgstr "Množství"
+
+#: inc/olza-logistic-options.php:47
+msgid "API Access Token"
+msgstr "API Přístupový Token"
+
+#: inc/olza-logistic-options.php:39
+msgid "API URL"
+msgstr "API URL"
+
+#: olza-logistic-woo.php:131
+msgid "Are You Sure"
+msgstr "Jsi si jistá"
+
+#: olza-logistic-woo.php:156
+msgid ""
+"Are you sure to refresh the data list! \\n it takes around 1 minute to "
+"complete"
+msgstr ""
+"Jste si jisti, že aktualizujete seznam dat! \\n dokončení trvá asi 1 minutu"
+
+#: inc/olza-logistic-admin-functions.php:246
+msgid "Basket Amount"
+msgstr "Koš Výše"
+
+#: olza-logistic-woo.php:136
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: inc/olza-logistic-functions.php:434
+msgid "Choose Pickup"
+msgstr "Vyberte Vyzvednutí"
+
+#: inc/olza-logistic-options.php:65
+msgid "Click this button to refresh your olza logistic API data files."
+msgstr ""
+"Klepnutím na toto tlačítko aktualizovat své olši logistické údaje API "
+"soubory."
+
+#: inc/olza-logistic-functions.php:468
+msgid "Closest Pickup Points"
+msgstr "Nejbližší místa vyzvednutí"
+
+#: olza-logistic-woo.php:135
+msgid "Confirm"
+msgstr "Potvrdit"
+
+#: inc/olza-logistic-admin-functions.php:69
+msgid "Countries Added Successfully"
+msgstr "Země byly úspěšně přidány"
+
+#: inc/olza-logistic-functions.php:347
+msgid "Country file not exists."
+msgstr "Soubor země neexistuje."
+
+#: inc/olza-logistic-admin-functions.php:255
+msgid "Delete"
+msgstr "Odstranit"
+
+#: inc/olza-logistic-functions.php:400
+msgid "Enable this shipping method"
+msgstr "Aktivujte tento způsob dopravy"
+
+#: inc/olza-logistic-functions.php:398
+msgid "Enable/Disable"
+msgstr "Povolit/zakázat"
+
+#: inc/olza-logistic-admin-functions.php:248
+#: inc/olza-logistic-admin-functions.php:271
+msgid "Equal"
+msgstr "Rovné"
+
+#: inc/olza-logistic-admin-functions.php:254
+#: inc/olza-logistic-admin-functions.php:277
+msgid "Fee"
+msgstr "Poplatek"
+
+#: inc/olza-logistic-admin-functions.php:18
+msgid "Files Not Updated"
+msgstr "Soubory nejsou aktualizovány"
+
+#: olza-logistic-woo.php:133
+msgid "Go to checkout"
+msgstr "Přejít k pokladně"
+
+#. Author of the plugin
+msgid "Grand Brand"
+msgstr "Grand Značky"
+
+#: inc/olza-logistic-admin-functions.php:251
+#: inc/olza-logistic-admin-functions.php:274
+msgid "Greater"
+msgstr "Větší"
+
+#: inc/olza-logistic-admin-functions.php:252
+#: inc/olza-logistic-admin-functions.php:275
+msgid "Greater than Equal"
+msgstr "Větší než Rovná"
+
+#: inc/olza-logistic-admin-functions.php:249
+#: inc/olza-logistic-admin-functions.php:272
+msgid "Less"
+msgstr "Méně"
+
+#: inc/olza-logistic-admin-functions.php:250
+#: inc/olza-logistic-admin-functions.php:273
+msgid "Less than Equal"
+msgstr "Méně než Rovné"
+
+#: inc/olza-logistic-options.php:35
+msgid "Manage your API settings for the Pickup Points."
+msgstr "Spravovat své API nastavení pro Vyzvednutí Body."
+
+#: inc/olza-logistic-options.php:55
+msgid "Map API key"
+msgstr "Mapy API klíč"
+
+#: inc/olza-logistic-functions.php:404
+msgid "Method Title"
+msgstr "Název metody"
+
+#: inc/olza-logistic-functions.php:599
+msgid "Nearby Points Loaded Successfully."
+msgstr "Blízké body byly úspěšně načteny."
+
+#: inc/olza-logistic-options.php:33
+msgid "Olza API Settings"
+msgstr "Olši API Nastavení"
+
+#. Name of the plugin
+msgid "Olza Logistic WooCommerce"
+msgstr "Olši Logistické WooCommerce"
+
+#. Description of the plugin
+msgid ""
+"Olza Logistic WooCommerce is an addon that allows you to select pickup "
+"locations and delivery prices on the checkout page."
+msgstr ""
+"Olši Logistické WooCommerce je addon, který umožňuje vybrat pick-up místech "
+"a doručení ceny na stránce pokladny."
+
+#: inc/olza-logistic-functions.php:335
+msgid "Pick Points Loaded Successfully."
+msgstr "Vybrat Body Načteny Úspěšně."
+
+#: inc/olza-logistic-functions.php:733
+msgid "Pickup Address"
+msgstr "Vyzvednutí Adresu"
+
+#: inc/olza-logistic-functions.php:630
+msgid "Pickup Fee"
+msgstr "Pickup Poplatek"
+
+#: inc/olza-logistic-functions.php:92
+msgid "Pickup Point"
+msgstr "Pickup Bod"
+
+#: inc/olza-logistic-functions.php:735
+msgid "Pickup Point Courier"
+msgstr "Vyzvednutí Kurýrem"
+
+#: inc/olza-logistic-functions.php:734
+msgid "Pickup Point ID"
+msgstr "Pickup Bod ID"
+
+#: inc/olza-logistic-functions.php:390 inc/olza-logistic-functions.php:407
+msgid "PickUp Points"
+msgstr "Vyzvedací body"
+
+#: inc/olza-logistic-functions.php:732
+msgid "Pickup Points Data"
+msgstr "Vyzvednutí Body Dat"
+
+#: inc/olza-logistic-functions.php:391
+msgid "PickUp Points Shipping method."
+msgstr "Body vyzvednutí Způsob dopravy."
+
+#: inc/olza-logistic-functions.php:482
+msgid "PickUp Selection : "
+msgstr "Výběr vyzvednutí:"
+
+#: olza-logistic-woo.php:134
+msgid "Please choose pickup point shipping method to show pickup point"
+msgstr ""
+"Chcete-li zobrazit místo vyzvednutí, vyberte způsob dopravy na místo "
+"vyzvednutí"
+
+#: inc/olza-logistic-functions.php:39
+msgid "Please select a pickup point."
+msgstr "Vyberte prosím místo vyzvednutí."
+
+#: inc/olza-logistic-admin-functions.php:30 inc/olza-logistic-functions.php:169
+msgid "Please verify APP URL & Acess Token."
+msgstr "Prosím, ověřte, zda APLIKACE URL & Acess Token."
+
+#: olza-logistic-woo.php:129 olza-logistic-woo.php:130
+msgid "Search Pick Up"
+msgstr "Hledat Pick Up"
+
+#: inc/olza-logistic-admin-functions.php:140
+#: inc/olza-logistic-functions.php:352 inc/olza-logistic-functions.php:602
+msgid "Security verification failed."
+msgstr "Bezpečnostní ověření se nezdařilo."
+
+#: inc/olza-logistic-options.php:71
+msgid "Set Pickup Pricing"
+msgstr "Sada Vyzvednutí Cen"
+
+#: inc/olza-logistic-admin-functions.php:196
+msgid "Spinner"
+msgstr "Spinner"
+
+#: inc/olza-logistic-options.php:63
+msgid "Sync Olza Logistic Data"
+msgstr "Synchronizace Olši Logistických Dat"
+
+#: inc/olza-logistic-functions.php:338 inc/olza-logistic-functions.php:343
+#, php-format
+msgid "There are no pickup points in %s."
+msgstr "Nejsou žádné pickup bodů v %s."
+
+#: inc/olza-logistic-functions.php:406
+msgid "This controls the title which the user sees during checkout."
+msgstr "Toto řídí název, který uživatel vidí při placení."
+
+#: olza-logistic-woo.php:132
+msgid "Your pickup selection is : "
+msgstr "Váš výběr vyzvednutí je:"

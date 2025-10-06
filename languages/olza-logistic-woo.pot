@@ -1,0 +1,271 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Olza Logistic WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-28 13:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.2\n"
+"X-Domain: olza-logistic-woo"
+
+#: olza-logistic-woo.php:91
+msgid ""
+"<p> The <strong>Olza Logistic WooCommerce </strong> plugin requires <strong>"
+"WooCommerce</strong> plugin installed & activated. </p>"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:261
+msgid "Add"
+msgstr ""
+
+#: inc/olza-logistic-options.php:73
+msgid "Add fee according to the basket amount low to high."
+msgstr ""
+
+#: inc/olza-logistic-options.php:57
+msgid "Add your Mapbox API key."
+msgstr ""
+
+#: inc/olza-logistic-options.php:49
+msgid "Add your olza logistic API access token."
+msgstr ""
+
+#: inc/olza-logistic-options.php:41
+msgid "Add your olza logistic API URL."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:460
+msgid "ALL"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:269
+msgid "Amount"
+msgstr ""
+
+#: inc/olza-logistic-options.php:47
+msgid "API Access Token"
+msgstr ""
+
+#: inc/olza-logistic-options.php:39
+msgid "API URL"
+msgstr ""
+
+#: olza-logistic-woo.php:131
+msgid "Are You Sure"
+msgstr ""
+
+#: olza-logistic-woo.php:156
+msgid ""
+"Are you sure to refresh the data list! \\n it takes around 1 minute to "
+"complete"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:246
+msgid "Basket Amount"
+msgstr ""
+
+#: olza-logistic-woo.php:136
+msgid "Cancel"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:434
+msgid "Choose Pickup"
+msgstr ""
+
+#: inc/olza-logistic-options.php:65
+msgid "Click this button to refresh your olza logistic API data files."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:468
+msgid "Closest Pickup Points"
+msgstr ""
+
+#: olza-logistic-woo.php:135
+msgid "Confirm"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:69
+msgid "Countries Added Successfully"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:347
+msgid "Country file not exists."
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:255
+msgid "Delete"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:400
+msgid "Enable this shipping method"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:398
+msgid "Enable/Disable"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:248
+#: inc/olza-logistic-admin-functions.php:271
+msgid "Equal"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:254
+#: inc/olza-logistic-admin-functions.php:277
+msgid "Fee"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:18
+msgid "Files Not Updated"
+msgstr ""
+
+#: olza-logistic-woo.php:133
+msgid "Go to checkout"
+msgstr ""
+
+#. Author of the plugin
+msgid "Grand Brand"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:251
+#: inc/olza-logistic-admin-functions.php:274
+msgid "Greater"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:252
+#: inc/olza-logistic-admin-functions.php:275
+msgid "Greater than Equal"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:249
+#: inc/olza-logistic-admin-functions.php:272
+msgid "Less"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:250
+#: inc/olza-logistic-admin-functions.php:273
+msgid "Less than Equal"
+msgstr ""
+
+#: inc/olza-logistic-options.php:35
+msgid "Manage your API settings for the Pickup Points."
+msgstr ""
+
+#: inc/olza-logistic-options.php:55
+msgid "Map API key"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:404
+msgid "Method Title"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:599
+msgid "Nearby Points Loaded Successfully."
+msgstr ""
+
+#: inc/olza-logistic-options.php:33
+msgid "Olza API Settings"
+msgstr ""
+
+#. Name of the plugin
+msgid "Olza Logistic WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Olza Logistic WooCommerce is an addon that allows you to select pickup "
+"locations and delivery prices on the checkout page."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:335
+msgid "Pick Points Loaded Successfully."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:733
+msgid "Pickup Address"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:630
+msgid "Pickup Fee"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:92
+msgid "Pickup Point"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:735
+msgid "Pickup Point Courier"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:734
+msgid "Pickup Point ID"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:390 inc/olza-logistic-functions.php:407
+msgid "PickUp Points"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:732
+msgid "Pickup Points Data"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:391
+msgid "PickUp Points Shipping method."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:482
+msgid "PickUp Selection : "
+msgstr ""
+
+#: olza-logistic-woo.php:134
+msgid "Please choose pickup point shipping method to show pickup point"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:39
+msgid "Please select a pickup point."
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:30 inc/olza-logistic-functions.php:169
+msgid "Please verify APP URL & Acess Token."
+msgstr ""
+
+#: olza-logistic-woo.php:129 olza-logistic-woo.php:130
+msgid "Search Pick Up"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:140
+#: inc/olza-logistic-functions.php:352 inc/olza-logistic-functions.php:602
+msgid "Security verification failed."
+msgstr ""
+
+#: inc/olza-logistic-options.php:71
+msgid "Set Pickup Pricing"
+msgstr ""
+
+#: inc/olza-logistic-admin-functions.php:196
+msgid "Spinner"
+msgstr ""
+
+#: inc/olza-logistic-options.php:63
+msgid "Sync Olza Logistic Data"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:338 inc/olza-logistic-functions.php:343
+#, php-format
+msgid "There are no pickup points in %s."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:406
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: olza-logistic-woo.php:132
+msgid "Your pickup selection is : "
+msgstr ""

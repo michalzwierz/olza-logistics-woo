@@ -1,0 +1,79 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Olza Logistic WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-26 11:25+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.2\n"
+"X-Domain: olza-logistic-woo"
+
+#: olza-logistic-woo.php:87
+msgid ""
+"<p> The <strong>Olza Logistic WooCommerce </strong> plugin requires <strong>"
+"WooCommerce</strong> plugin installed & activated. </p>"
+msgstr ""
+
+#: inc/olza-logistic-options.php:70
+msgid "General Settings"
+msgstr ""
+
+#. Author of the plugin
+msgid "Grand Brand"
+msgstr ""
+
+#. Name of the plugin
+msgid "Olza Logistic WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Olza Logistic WooCommerce is an addon that allows you to select pickup "
+"locations and delivery prices on the checkout page."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:260
+msgid "Pick Points Loaded Successfully."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:89
+msgid "Pickup Point"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:18
+msgid "PickUp Selection : "
+msgstr ""
+
+#: inc/olza-logistic-functions.php:55
+msgid "Please select a pickup point."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:160
+msgid "Please verify APP URL & Acess Token."
+msgstr ""
+
+#: inc/olza-logistic-functions.php:274
+msgid "Security verification failed."
+msgstr ""
+
+#: inc/olza-logistic-options.php:123
+#, php-format
+msgid "Select %s"
+msgstr ""
+
+#: inc/olza-logistic-options.php:149
+msgid "Settings Saved"
+msgstr ""
+
+#: inc/olza-logistic-functions.php:263 inc/olza-logistic-functions.php:268
+#, php-format
+msgid "There are no pickup points in %s."
+msgstr ""

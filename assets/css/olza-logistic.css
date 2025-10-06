@@ -1,0 +1,340 @@
+#olza-pickup-map {
+    position: relative;
+}
+
+.olza-loader-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 76, 76, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#olza-pickup-map {
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.oloz-pickup-selection {
+    margin: 10px 0;
+    display: none;
+}
+
+.mapboxgl-ctrl-geocoder .mapboxgl-ctrl-geocoder--pin-right>* {
+    right: 3px;
+    top: 5px;
+    height: 13px !important;
+    min-height: 37px !important;
+}
+
+.mapboxgl-ctrl-geocoder {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+input.mapboxgl-ctrl-geocoder--input {
+    padding: 0 34px !important;
+    width: 100%;
+    height: 50px;
+    border: none !important;
+}
+
+.mapboxgl-ctrl-geocoder.mapboxgl-ctrl svg {
+    top: 16px !important;
+}
+
+.mapboxgl-ctrl-geocoder .suggestions li {
+    margin: 0 !important;
+}
+
+.olza-spedition-wrap .select2-selection--single {
+    border: none !important;
+}
+
+/**
+modal box
+**/
+.custom-modal {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(0 0 0 / 60%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.custom-modal-dialog {
+    max-width: 90%;
+    width: 100%;
+    border-radius: 0px;
+    position: relative;
+}
+
+.custom-modal-content {
+    background: #ffffff;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.olza-close-modal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background: #f56142;
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+    z-index: 9;
+    box-shadow: 0px 0px 30px 0px rgb(0 0 0 / 8%);
+    padding: 0;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.custom-modal {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.modal-open .custom-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.custom-modal .custom-modal-dialog {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+body.modal-open .custom-modal .custom-modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.custom-modal,
+body .custom-modal,
+body.modal-open .custom-modal .custom-modal-dialog,
+body .custom-modal .custom-modal-dialog {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media (max-width: 575.98px) {}
+
+
+/**  map styling **/
+
+.olza-map-dialog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.olza-map-filters {
+    width: 30%;
+    padding: 20px;
+}
+
+.olza-map-data {
+    width: 70%;
+    padding: 20px 30px 20px 0px;
+}
+
+.mapboxgl-ctrl-geocoder #olza-spedition-dropdown {
+    width: 100%;
+}
+
+#olza-geocoder {
+    height: 50px;
+    border: 1px solid #f1f1f1;
+}
+
+.olza-filters-wrap {
+    padding: 10px;
+    background: #51bbd6;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.olza-point-listings {
+    border: 1px solid #51bbd6;
+    position: relative;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        min-height: 300px;
+        max-height: 300px;
+        overflow-y: scroll;
+
+        li {
+            padding: 10px;
+            color: #000;
+            margin: 0;
+            border-bottom: 1px solid #51bbd6;
+
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                color: #000;
+
+                p.ad-name {
+                    margin: 0;
+                    color: #000;
+                    font-size: 14px;
+                }
+
+                p.ad-full {
+                    margin: 0;
+                    color: gray;
+                    font-size: 12px;
+                }
+
+                p.ad-dis {
+                    margin: 0;
+                    color: gray;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}
+
+.olza-search-wrap {
+    margin: 15px 0;
+}
+
+.olza-listings-head {
+    background: #51bbd6;
+    padding: 15px 10px;
+    margin: 0;
+
+    p {
+        margin: 0;
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+.olza-closest-listings ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+.olza-closest-listings ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.olza-closest-listings ul::-webkit-scrollbar-thumb {
+    background: #51bbd6;
+    ;
+}
+
+.olza-closest-listings ul::-webkit-scrollbar-thumb:hover {
+    background: #51bbd6;
+}
+
+.olza-closest-listings ul::-webkit-scrollbar-thumb:active {
+    background: #51bbd6;
+}
+
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right {
+    display: none !important;
+}
+
+.olza-load-map {
+    padding: 10px;
+    background: #9c80b7;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+/**
+Media query for tab and mobile
+**/
+
+@media only screen and (max-width: 800px) {
+    .olza-map-data {
+        width: 100%;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .olza-map-filters {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .olza-map-dialog {
+        flex-wrap: wrap;
+    }
+
+    .jconfirm-box {
+        width: 70% !important;
+    }
+
+    .jconfirm .jconfirm-box div.jconfirm-title-c .jconfirm-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .jconfirm-content div {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button,
+    .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button {
+        font-size: 12px;
+    }
+
+    .custom-modal-dialog {
+        height: 81%;
+        overflow-y: scroll;
+        border-radius: 10px;
+        margin-top: 50px;
+    }
+
+    .custom-modal {
+        padding: 30px 0 !important;
+    }
+
+    .olza-close-modal {
+        top: 0;
+        right: 0;
+    }
+
+    .olza-point-listings ul {
+        min-height: 0;
+    }
+
+    #olza-pickup-map {
+        height: 400px;
+    }
+}
