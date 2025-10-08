@@ -78,7 +78,7 @@ if (!function_exists('olza_logistic_parse_countries_response')) {
      *
      * @param array $response Response body decoded as array.
      *
-     * @return array Associative array of country_code => label.
+     * @return array|WP_Error Associative array of country_code => label or WP_Error on failure.
      */
     function olza_logistic_parse_countries_response($response)
     {
@@ -89,6 +89,21 @@ if (!function_exists('olza_logistic_parse_countries_response')) {
         }
 
         $data = isset($response['data']) ? $response['data'] : $response;
+
+        if (isset($data['status']) && isset($data['message']) && !isset($data['countries'])) {
+            $status = sanitize_key($data['status']);
+            $message = sanitize_text_field($data['message']);
+
+            if (empty($message)) {
+                $message = __('Unexpected response from the Olza API.', 'olza-logistic-woo');
+            }
+
+            return new WP_Error(
+                'olza_logistic_countries_api_error',
+                $message,
+                array('status' => $status)
+            );
+        }
 
         if (isset($data['countries'])) {
             $data = $data['countries'];
@@ -235,6 +250,10 @@ if (!function_exists('olza_logistic_fetch_country_provider_data')) {
 
                 if (is_array($countries_body)) {
                     $countries_payload = olza_logistic_parse_countries_response($countries_body);
+
+                    if (is_wp_error($countries_payload)) {
+                        return $countries_payload;
+                    }
                 }
             }
         }
@@ -316,6 +335,16 @@ function olza_get_available_options_callback()
     }
 
     $country_payload = olza_logistic_fetch_country_provider_data($api_url, $access_token);
+
+    if (is_wp_error($country_payload)) {
+        $error_message = sanitize_text_field($country_payload->get_error_message());
+
+        if (empty($error_message)) {
+            $error_message = __('Unable to load available options from the Olza API.', 'olza-logistic-woo');
+        }
+
+        wp_send_json_error(array('message' => $error_message));
+    }
 
     if (empty($country_payload)) {
         $defaults = olza_logistic_get_default_country_provider_selection();
