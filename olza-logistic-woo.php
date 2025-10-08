@@ -147,13 +147,58 @@ add_action('admin_enqueue_scripts', 'aloa_marketing_adding_admin_scripts');
 function aloa_marketing_adding_admin_scripts()
 {
 
-	wp_enqueue_script('olza-logistic-admin', OLZA_LOGISTIC_PLUGIN_URL . 'assets/js/olza-logistic-admin.js', array('jquery'), OLZA_LOGISTIC_PLUGIN_VERSION, true);
-	wp_enqueue_script('olza-repeater', OLZA_LOGISTIC_PLUGIN_URL . 'assets/js/repeater.js', array('jquery'), OLZA_LOGISTIC_PLUGIN_VERSION, false);
+        wp_enqueue_script('olza-logistic-admin', OLZA_LOGISTIC_PLUGIN_URL . 'assets/js/olza-logistic-admin.js', array('jquery'), OLZA_LOGISTIC_PLUGIN_VERSION, true);
+        wp_enqueue_script('olza-repeater', OLZA_LOGISTIC_PLUGIN_URL . 'assets/js/repeater.js', array('jquery'), OLZA_LOGISTIC_PLUGIN_VERSION, false);
 
-	wp_localize_script('olza-logistic-admin', 'olza_global_admin', array(
-		'ajax_url' => admin_url('admin-ajax.php'),
-		'nonce' => wp_create_nonce('olza_load_files'),
-		'confirm_msg' => __('Are you sure to refresh the data list! \n it takes around 1 minute to complete', 'olza-logistic-woo'),
+        $olza_options = get_option('olza_options', array());
+        $defaults = function_exists('olza_logistic_get_default_country_provider_selection') ? olza_logistic_get_default_country_provider_selection() : array(
+                'countries' => array('cz'),
+                'providers' => array(
+                        'cz' => array('ppl-ps', 'wedo-box'),
+                ),
+        );
 
-	));
+        $selected_countries = $defaults['countries'];
+        $selected_providers = $defaults['providers'];
+
+        if (array_key_exists('selected_countries', $olza_options)) {
+                $selected_countries = is_array($olza_options['selected_countries']) ? $olza_options['selected_countries'] : array();
+        }
+
+        if (array_key_exists('selected_providers', $olza_options) && is_array($olza_options['selected_providers'])) {
+                $selected_providers = $olza_options['selected_providers'];
+        }
+
+        $selected_countries = array_values(array_unique(array_filter(array_map('sanitize_key', $selected_countries))));
+
+        $normalized_providers = array();
+        foreach ((array) $selected_providers as $country => $providers) {
+                $country_code = sanitize_key($country);
+
+                if (empty($country_code)) {
+                        continue;
+                }
+
+                $providers = is_array($providers) ? $providers : array();
+                $normalized_providers[$country_code] = array_values(array_unique(array_filter(array_map('sanitize_key', $providers))));
+        }
+
+        $selected_providers = $normalized_providers;
+
+        $fallback_countries = function_exists('olza_logistic_build_country_payload') ? olza_logistic_build_country_payload($defaults['countries'], $defaults['providers']) : array();
+
+        wp_localize_script('olza-logistic-admin', 'olza_global_admin', array(
+                'ajax_url' => admin_url('admin-ajax.php'),
+                'nonce' => wp_create_nonce('olza_load_files'),
+                'confirm_msg' => __('Are you sure to refresh the data list! \n it takes around 1 minute to complete', 'olza-logistic-woo'),
+                'genericError' => __('Unable to process the request. Please try again.', 'olza-logistic-woo'),
+                'refreshSuccess' => __('Olza data files updated.', 'olza-logistic-woo'),
+                'selectedCountries' => $selected_countries,
+                'selectedProviders' => $selected_providers,
+                'fallbackCountries' => $fallback_countries,
+                'noCountriesMessage' => __('No countries are currently available. Please verify your API credentials.', 'olza-logistic-woo'),
+                'noProvidersMessage' => __('No providers available for the selected country.', 'olza-logistic-woo'),
+                'countriesAction' => 'olza_get_available_options',
+
+        ));
 }

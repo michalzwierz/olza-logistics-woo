@@ -60,6 +60,18 @@ function olza_logistic_get_settings($settings)
                 'css' => 'min-width:300px;',
             ),
             array(
+                'title' => __('Available Countries', 'olza-logistic-woo'),
+                'type' => 'olza_country_selector',
+                'desc' => __('Choose which countries should be synchronised from the Olza API.', 'olza-logistic-woo'),
+                'id' => 'olza_options[selected_countries]',
+            ),
+            array(
+                'title' => __('Available Providers', 'olza-logistic-woo'),
+                'type' => 'olza_provider_selector',
+                'desc' => __('Select the pickup point providers to download for each enabled country.', 'olza-logistic-woo'),
+                'id' => 'olza_options[selected_providers]',
+            ),
+            array(
                 'name' => __('Sync Olza Logistic Data', 'olza-logistic-woo'),
                 'type' => 'button',
                 'desc' => __('Click this button to refresh your olza logistic API data files.', 'olza-logistic-woo'),
